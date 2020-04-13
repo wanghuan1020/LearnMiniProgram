@@ -1,66 +1,51 @@
 // pages/home/home.js
+// getApp()获取App()产生的实例对象
+const app = getApp()
+console.log(app.globalData);
+const {name, age} = app.globalData
+console.log(name, age);
+// 注册一个页面
+// 页面也有自己的生命周期函数
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  // 2.初始化数据
   data: {
-
+    msg: '哈哈哈'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // 3.监听wxml中相关的一些事件
+  handleGetUserInfo(event) {
+    console.log(event); 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  // 1.监听页面的生命周期函数
+  // 页面被加载出来
+  onLoad() {
+    console.log('onLoad');
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  // 页面初次渲染完成
+  onReady() {
+    console.log('onReady');
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  // 页面显示出来时
+  onShow() {
+    console.log('onShow');
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  // 页面隐藏起来时
+  onHide() {
+    console.log('onHide');
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  onUnload() {
+    console.log('onUnload');
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  // 4.监听其他事件
+  // 监听页面的滚动
+  onPageScroll(obj) {
+    console.log(obj);
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // 监听页面滚动到底部
+  onReachBottom() {
+    console.log('页面滚动到底部');
+  },
+  // 下拉刷新
+  onPullDownRefresh() {
+    console.log('下拉刷新');
   }
 })
