@@ -1,3 +1,10 @@
 <!--pages/home/home.wxml-->
+<include src="/wxml/header.wxml" />
 <text class="title">Hello World</text>
 <button>按钮</button>
+<include src="/wxml/footer.wxml" />
+
+<!-- 1.事件处理的回顾 -->
+<button bindtap="handleBtnClick" size="mini">按钮</button>
+<button bind:tap="handleBtnClick" size="mini">按钮</button>
+<button catch:tap="handleBtnClick" size="mini">按钮</button>

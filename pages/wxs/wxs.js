@@ -1,15 +1,12 @@
-// pages/home/home.js
+// pages/wxs/wxs.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-  handleBtnClick() {
-    console.log('按钮点击事件');
-    
+    price: 25.666666666,
+    time: 15786786
   },
 
   /**

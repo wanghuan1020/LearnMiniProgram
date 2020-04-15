@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/wxs/wxs",
+    "pages/wxml/wxml",
+    "pages/wxss/wxss",
     "pages/about/about"
   ]
 }
